@@ -146,5 +146,8 @@ h1 {
 .socials__icon {
   border: 1px solid white;
   border-radius: 50%;
-  padding: 8px;
+  display: grid;
+  place-content: center;
+  width: 36px;
+  height: 36px;
 }
