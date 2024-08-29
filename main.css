@@ -117,7 +117,7 @@ h1 {
   font: var(--CTA-BUTTON);
   background-color: white;
   color: var(--BUTTON-CLR);
-  padding: 11.29px 75.14px 10.71px 75.86;
+  padding: 11.29px 75.14px 10.71px 75.86px;
   display: grid;
   place-content: center;
   border-radius: 20px;
@@ -150,4 +150,93 @@ h1 {
   place-content: center;
   width: 36px;
   height: 36px;
+}
+
+/* Desktop */
+@media screen and (min-width: 720px) {
+  /* || GENERAL STYLES */
+  body {
+    background-image: url("./images/bg-desktop.svg");
+    background-position: left center;
+    background-size: auto 100%;
+  }
+
+  /* || HEADER */
+  .header {
+    margin: 64px 0 104px 80px;
+  }
+
+  .header__nav img {
+    width: 200px;
+    height: 32px;
+  }
+
+  /* || MAIN */
+  .main {
+    margin: 0 85px 27px 80px;
+    flex-flow: row;
+    gap: 59px;
+    align-items: flex-start;
+  }
+
+  .main__hero-image img {
+    width: 696px;
+    height: auto;
+  }
+
+  .main__cta {
+    align-items: flex-start;
+    margin-top: 32px;
+  }
+
+  .cta__title {
+    text-align: left;
+    font: 600 40px/60px var(--FF1);
+    width: 487px;
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+  .cta__text {
+    width: 520px;
+    height: auto;
+    text-align: left;
+    font: normal 18px/27px var(--FF2);
+    margin-bottom: 24px;
+  }
+
+  .cta__button {
+    font: normal 18px/27px var(--FF1);
+    padding: 13px 63px 16px 64px;
+    border-radius: 28px;
+    box-shadow: 2px 4px 9px 3px hsla(0, 0%, 0%, 0.2586);
+    width: 200px;
+    height: 56px;
+  }
+
+  .cta__button:hover,
+  .cta__button:focus-visible {
+    background-color: var(--HOVER-BTN);
+    color: white;
+  }
+
+  /* || FOOTER */
+  .footer {
+    margin: 0 80px 449px 0;
+  }
+
+  .footer__socials {
+    justify-content: flex-end;
+    gap: 16px;
+  }
+
+  .socials__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .socials__icon svg {
+    width: 24px;
+    height: 24px;
+  }
 }
