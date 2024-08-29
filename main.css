@@ -239,4 +239,24 @@ h1 {
     width: 24px;
     height: 24px;
   }
+
+  .socials__icon:hover,
+  .socials__icon:focus-visible {
+    border: 1px solid var(--HOVER-SLS);
+  }
+
+  .socials__icon svg:hover,
+  .socials__icon svg:focus-visible {
+    fill: var(--HOVER-SLS);
+  }
+
+  .socials__icon svg g:hover,
+  .socials__icon svg g:focus-visible {
+    fill: var(--HOVER-SLS);
+  }
+
+  /* .socials__icon svg path:hover,
+  .socials__icon svg path:focus-visible {
+    fill: var(--HOVER-SLS);
+  } */
 }
